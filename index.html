@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+        <!--DISCLAIMER: This project was built as a code along project from George Martsoukos Youtube Channel to familiarize myself with how to work with API's
+        -> George's Channel -> https://www.youtube.com/channel/UCRgwkH3Ks_J1pD1J4C9V_rw"
+        -> Code Along Video -> https://www.youtube.com/watch?v=2XTKONGhz5g
+    -->
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+<body>
+    <div class="api">
+        <div class="container">Created using OpenWeather API. <a target="_blank"
+                href="https://home.openweathermap.org/users/sign_up"></a>
+        </div>
+    </div>
+    <section class="top-banner">
+        <div class="container">
+            <div class="heading">
+            <img style="display: inline;" src="https://img.icons8.com/nolan/96/clouds.png"/>
+            <h1 style="display: inline;" class="heading">Weather App</h1>
+            </div>
+            <form>
+                <input type="text" placeholder="Search for a city" autofocus>
+                <button type="submit">SEARCH</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities"></ul>
+        </div>
+    </section>
+</body>
+<script src='main.js'></script>
+</html>
